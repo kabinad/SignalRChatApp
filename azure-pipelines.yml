@@ -31,3 +31,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- script: |
+    cd ChatServerCS\bin\Debug
+    echo '$(Build.SourcesDirectory)
+    SignalChatServer.exe
+  displayName: 'to run the software'
